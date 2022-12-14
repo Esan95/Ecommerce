@@ -1,5 +1,5 @@
 #from inspect import ArgSpec
-from msilib.schema import Error
+# from msilib.schema import Error
 from sqlite3 import IntegrityError
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Persona, Productos, productosComprados
