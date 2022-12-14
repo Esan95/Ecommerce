@@ -80,23 +80,23 @@ WSGI_APPLICATION = 'EjemploORM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ECOMMERCEBD',
-        'USER': 'recismart',
-        'PASSWORD': 'sqlserver.2022',
-        'HOST': 'mysqlrecismart.mysql.database.azure.com',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'ECOMMERCEBD',
+#         'USER': 'recismart',
+#         'PASSWORD': 'sqlserver.2022',
+#         'HOST': 'mysqlrecismart.mysql.database.azure.com',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
@@ -133,13 +133,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-# STATICFILES_DIRS = ["./EjemploORM/static"]
+STATICFILES_DIRS = ["./EjemploORM/static"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-# STATIC_URL = '/static/'
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
