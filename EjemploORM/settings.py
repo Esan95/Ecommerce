@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(zv8#e%@aya&o0)f6*s%qkfn7!!y!3hiz^w_kalci-%bm=i_6b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -39,10 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'EjemploORM',
-    'crispy_forms'
+    'crispy_forms',
+    'crispy_bootstrap5',
     
 ]
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,10 +80,21 @@ WSGI_APPLICATION = 'EjemploORM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ECOMMERCEBD',
+        'USER': 'recismart',
+        'PASSWORD': 'sqlserver.2022',
+        'HOST': 'mysqlrecismart.mysql.database.azure.com',
+        'PORT': '3306',
     }
 }
 
@@ -108,9 +121,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
+TIME_ZONE = 'America/Santiago'
 
-TIME_ZONE = 'UTC'
+# LANGUAGE_CODE = 'en-us'
+# TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -127,4 +142,4 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# CSRF_TRUSTED_ORIGINS = ['']
+# CSRF_TRUSTED_ORIGINS = []
