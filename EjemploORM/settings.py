@@ -26,7 +26,7 @@ SECRET_KEY = '(zv8#e%@aya&o0)f6*s%qkfn7!!y!3hiz^w_kalci-%bm=i_6b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ecommerce-production-72bc.up.railway.app']
 
 
 # Application definition
@@ -142,4 +142,4 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# CSRF_TRUSTED_ORIGINS = []
+# CSRF_TRUSTED_ORIGINS = [https://ecommerce-production-72bc.up.railway.app]
