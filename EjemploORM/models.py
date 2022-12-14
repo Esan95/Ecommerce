@@ -48,11 +48,3 @@ class productosComprados(models.Model):
     
     def __str__(self):
         return self.email
-
-class log_productos(models.Model):
-    id_prod = models.IntegerField(max_length=11)
-    name_prod = models.CharField(max_length=100)
-    price_prod = models.IntegerField(max_length=10)
-    inserted = models.DateTimeField(auto_now=True, auto_now_add=False)
-    updated = models.DateTimeField(auto_now=False, auto_now_add=False, null=True)
-    deleted = models.DateTimeField(auto_now=False, auto_now_add=False, null=True)
