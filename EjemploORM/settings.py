@@ -142,4 +142,4 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CSRF_TRUSTED_ORIGINS = [https://ecommerce-production-72bc.up.railway.app]
+CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
