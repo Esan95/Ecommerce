@@ -285,4 +285,4 @@ def detalleProducto(request, id):
 
         return render(request,"detalleProducto.html",{ "producto":producto,'sesion_activa':sesion,'sesion_perfil':perfil})
     except:
-        return render(request,"index.html",{'sesion_activa':sesion,'sesion_perfil':perfil})
+        return render(request,"detalleProducto.html",{ "producto":producto,'sesion_activa':sesion,'sesion_perfil':perfil})
