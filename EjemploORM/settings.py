@@ -35,7 +35,7 @@ SECRET_KEY = '(zv8#e%@aya&o0)f6*s%qkfn7!!y!3hiz^w_kalci-%bm=i_6b'
 # USO SOLO PARA RAILWAY
 DEBUG = False
 #USO LOCAL
-# DEBUG = True
+DEBUG = True
 #---------------------------------------------------------------------------------------------------
 #IMPORTANTE
 #---------------------------------------------------------------------------------------------------
@@ -103,38 +103,29 @@ WSGI_APPLICATION = 'EjemploORM.wsgi.application'
 #---------------------------------------------------------------------------------------------------
 # USO LOCAL, COMENTAR CUANDO USEN EL DE AZURE
 #---------------------------------------------------------------------------------------------------
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 #---------------------------------------------------------------------------------------------------
 #*************************BD AZURE ********************************************
 #---------------------------------------------------------------------------------------------------
 # IMPORTANTE!!! DESCOMENTAR PARA MYSQL EN AZURE
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ECOMMERCEBD',
-        'USER': 'recismart',
-        'PASSWORD': 'sqlserver.2022',
-        'HOST': 'mysqlrecismart.mysql.database.azure.com',
-        'PORT': '3306',
-    }
-}
-#---------------------------------------------------------------------------------------------------
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'db_tejer_y_punto',
-#         'USER': 'root',
-#         'PASSWORD': '',
-#         'HOST': 'localhost',
+#         'NAME': 'ECOMMERCEBD',
+#         'USER': 'recismart',
+#         'PASSWORD': 'sqlserver.2022',
+#         'HOST': 'mysqlrecismart.mysql.database.azure.com',
 #         'PORT': '3306',
 #     }
 # }
+#---------------------------------------------------------------------------------------------------
+
 
 
 # Password validation
