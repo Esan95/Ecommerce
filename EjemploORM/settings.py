@@ -27,8 +27,6 @@ SECRET_KEY = '(zv8#e%@aya&o0)f6*s%qkfn7!!y!3hiz^w_kalci-%bm=i_6b'
 
 #---------------------------------------------------------------------------------------------------
 
-# ///////////////////  ME DEBEN COMO 20 CERVEZAS   XDDDDDDD  ////////////////////
-
 #---------------------------------------------------------------------------------------------------
 
 #---------------------------------------------------------------------------------------------------
@@ -43,7 +41,6 @@ DEBUG = True
 #---------------------------------------------------------------------------------------------------
 #  DESCOMENTAR PARA RAILWAY
 ALLOWED_HOSTS = ['ecommerce-production-72bc.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.apt']
 
 # USO SOLO LOCAL
 # ALLOWED_HOSTS = []
@@ -180,5 +177,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #---------------------------------------------------------------------------------------------------
 # IMPORTANTE!!!! DESCOMENTAR PARA RAILWAY
 
-# CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
 #---------------------------------------------------------------------------------------------------
