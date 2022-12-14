@@ -6,7 +6,7 @@
 {% block body %}
 
 <h1>Iniciar Sesión</h1>
-<form action="sesion" method="post"> 
+<form action="sesion" method="post"> {% csrf_token %}
     <table>
         <tr>
             <td>Rut</td>
