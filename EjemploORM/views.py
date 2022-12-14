@@ -120,7 +120,7 @@ def ingresar(request):
     perfil = None
     try:
         sesion = request.session['sesion_activa']
-        sesion_perfil = request.session["sesion_perfil"]
+        perfil = request.session['sesion_perfil']
         return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':sesion_perfil})
     except:
         return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':sesion_perfil})
