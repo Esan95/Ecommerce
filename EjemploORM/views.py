@@ -2,7 +2,7 @@
 # from msilib.schema import Error
 from sqlite3 import IntegrityError
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import EjemploormProductos, EjemploormPersona, EjemploormProductoscomprados
+from .models import Persona, Productos, productosComprados
 from django.contrib.auth.hashers import make_password, check_password
 from django.core.paginator import Paginator
 from .forms import ProductoForm
