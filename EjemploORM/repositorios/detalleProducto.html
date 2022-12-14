@@ -52,26 +52,7 @@ Esta es la página de inicio
                         <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
                     </ul>
                 </li>
-                {% if sesion_perfil == 'emprendedor' or sesion_perfil == 'admin' %}
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin Productos</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="agregarProducto">Agregar Productos</a></li>
-                      <li><a class="dropdown-item" href="listarEditar">Editar o eliminar Productos</a></li>
-                  </ul>
-                {% endif %}
-              </li>
-              {% if sesion_perfil == 'admin' %}
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Admin Usuarios</a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="ingresar">Ingresar Persona</a></li>
-                    <li><a class="dropdown-item" href="eliminar">Eliminar Persona</a></li>
-                    <li><a class="dropdown-item" href="listar">Listar Personas</a></li>
-                    <li><a class="dropdown-item" href="actualizar">Actualizar Persona</a></li>
-                </ul>
-              {% endif %}
-            </li>
+                
           </ul>
               </li>
             </ul>
