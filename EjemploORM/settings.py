@@ -43,7 +43,7 @@ DEBUG = True
 #---------------------------------------------------------------------------------------------------
 #  DESCOMENTAR PARA RAILWAY
 ALLOWED_HOSTS = ['ecommerce-production-72bc.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['ecommerce-production-72bc.up.railway.apt']
+CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.apt']
 
 # USO SOLO LOCAL
 # ALLOWED_HOSTS = []
