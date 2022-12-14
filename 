@@ -1,0 +1,37 @@
+[33m72ed18b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'master' of https://github.com/Esan95/Ecommerce
+[33m9c88f84[m import db mysql y names en models e imports
+[33m0c9c4ad[m tabla log creada
+[33m7d5ff46[m Merge branch 'master' of https://github.com/Esan95/Ecommerce
+[33m6118f3f[m img y migrate
+[33m4adf511[m Update eliminar.html
+[33ma34e0ab[m Update ingresar.html
+[33m4669954[m Update iniciar_sesion.html
+[33m7d34b40[m Update detalleProducto.html
+[33mf6e4cfd[m Update detalleProducto.html
+[33mdce622a[m Update detalleProducto.html
+[33m5cea177[m Update index.html
+[33m88d6537[m Update views.py
+[33m395c536[m Update views.py
+[33m2092a7f[m Update detalleProducto.html
+[33m50bc01a[m Update detalleProducto.html
+[33mebf7760[m Update settings.py
+[33m0f3bff9[m Update settings.py
+[33m642ebff[m Update settings.py
+[33m9bd3716[m Update settings.py
+[33m3af7f1c[m Update iniciar_sesion.html
+[33m74a2efc[m Update iniciar_sesion.html
+[33m306825c[m Update views.py
+[33m8630797[m Update views.py
+[33me42ed01[m Update settings.py
+[33m37943bf[m Update settings.py
+[33m26aba7c[m Update settings.py
+[33m0deb286[m Update settings.py
+[33m078e599[m Update settings.py
+[33mcdc6db3[m Update settings.py
+[33m1aebfe3[m Update views.py
+[33m3e67042[m Update settings.py
+[33maff1e34[m Create requirements.txt
+[33m7282014[m Update settings.py
+[33m4b68767[m Update views.py
+[33ma2bf1f0[m Update settings.py
+[33m60a45ba[m first commit
