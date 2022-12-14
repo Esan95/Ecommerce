@@ -285,4 +285,5 @@ def detalleProducto(request, id):
 
         return render(request,"detalleProducto.html",{ "producto":producto,'sesion_activa':sesion,'sesion_perfil':perfil})
     except:
+        producto = get_object_or_404 (Productos, id=id)
         return render(request,"detalleProducto.html",{ "producto":producto,'sesion_activa':sesion,'sesion_perfil':perfil})
