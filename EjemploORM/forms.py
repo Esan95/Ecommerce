@@ -1,8 +1,8 @@
 from django import forms
-from .models import Productos
+from .models import EjemploormProductos
 
 class ProductoForm(forms.ModelForm):
 
     class Meta:
-        model = Productos
+        model = EjemploormProductos
         fields = '__all__'
