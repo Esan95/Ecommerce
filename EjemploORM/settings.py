@@ -177,5 +177,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #---------------------------------------------------------------------------------------------------
 # IMPORTANTE!!!! DESCOMENTAR PARA RAILWAY
 
-CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app',
+                       'https://www.tejerypunto.cl',
+                       'https://tejerypunto.cl']
 #---------------------------------------------------------------------------------------------------
