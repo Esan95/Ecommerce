@@ -121,9 +121,9 @@ def ingresar(request):
     try:
         sesion = request.session['sesion_activa']
         perfil = request.session['sesion_perfil']
-        return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':sesion_perfil})
+        return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':perfil})
     except:
-        return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':sesion_perfil})
+        return render(request,"ingresar.html",{'sesion_activa':sesion,'sesion_perfil':perfil})
 
 def ingresarProducto(request):
     sesion = None
