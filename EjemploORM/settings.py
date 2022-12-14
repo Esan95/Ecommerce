@@ -24,9 +24,30 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(zv8#e%@aya&o0)f6*s%qkfn7!!y!3hiz^w_kalci-%bm=i_6b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['ecommerce-production-72bc.up.railway.app']
+#---------------------------------------------------------------------------------------------------
+
+# ///////////////////  ME DEBEN COMO 20 CERVEZAS   XDDDDDDD  ////////////////////
+
+#---------------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------------------------
+#IMPORTANTE!!!
+#---------------------------------------------------------------------------------------------------
+# USO SOLO PARA RAILWAY
+DEBUG = False
+#USO LOCAL
+DEBUG = True
+#---------------------------------------------------------------------------------------------------
+#IMPORTANTE
+#---------------------------------------------------------------------------------------------------
+#  DESCOMENTAR PARA RAILWAY
+# ALLOWED_HOSTS = ['ecommerce-production-72bc.up.railway.app']
+
+# USO SOLO LOCAL
+ALLOWED_HOSTS = []
+#---------------------------------------------------------------------------------------------------
+
 
 
 # Application definition
@@ -80,6 +101,10 @@ WSGI_APPLICATION = 'EjemploORM.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+
+#---------------------------------------------------------------------------------------------------
+# USO LOCAL, COMENTAR CUANDO USEN EL DE AZURE
+#---------------------------------------------------------------------------------------------------
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -87,6 +112,10 @@ DATABASES = {
     }
 }
 
+#---------------------------------------------------------------------------------------------------
+#*************************BD AZURE ********************************************
+#---------------------------------------------------------------------------------------------------
+# IMPORTANTE!!! DESCOMENTAR PARA MYSQL EN AZURE
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
@@ -97,6 +126,8 @@ DATABASES = {
 #         'PORT': '3306',
 #     }
 # }
+#---------------------------------------------------------------------------------------------------
+
 
 
 # Password validation
@@ -142,4 +173,11 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
+
+#---------------------------------------------------------------------------------------------------
+#RAILWAY
+#---------------------------------------------------------------------------------------------------
+# IMPORTANTE!!!! DESCOMENTAR PARA RAILWAY
+
+# CSRF_TRUSTED_ORIGINS = ['https://ecommerce-production-72bc.up.railway.app']
+#---------------------------------------------------------------------------------------------------
